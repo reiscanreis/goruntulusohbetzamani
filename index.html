@@ -171,35 +171,37 @@
 
 <script>
 const apkLinks = [
-  'https://ucarecdn.com/827a9c86-d9ec-4feb-a068-5fb50d7057ce/goruntulusohbet.apk',
-  'https://ucarecdn.com/12b99832-8095-4702-bbbb-68543fe68047/goruntulusohbet.apk',
-  'https://ucarecdn.com/d969507c-dbe1-4526-982d-2835e62ef20a/goruntulusohbet.apk',
-  'https://ucarecdn.com/ec90c324-9f67-4968-b2ff-01277e5ab809/goruntulusohbet.apk',
-  'https://ucarecdn.com/d2e50595-bba7-4852-b816-d414e865b481/goruntulusohbet.apk',
-  'https://ucarecdn.com/c22984e3-51fd-4a8e-83dd-1b4081a460d1/goruntulusohbet.apk',
-  'https://ucarecdn.com/fee5137d-88aa-4575-9e2f-45521d223616/goruntulusohbet.apk',
-  'https://ucarecdn.com/2064f984-7cd6-4753-8781-c87f62d8c2f2/goruntulusohbet.apk',
-  'https://ucarecdn.com/7a7dea85-cb8b-44bf-ba4a-e933be351b72/goruntulusohbet.apk',
-  'https://ucarecdn.com/d557d359-4ee5-40a5-b67b-9b0bf0d4eae3/goruntulusohbet.apk',
+  'https://ucarecdn.com/61c489e5-06a1-42f3-92a0-2d44706362a2/ucretsizsohbet.apk',
+  'https://ucarecdn.com/f998469f-2725-4959-b2d9-7eb318d4fdf5/ucretsizsohbet.apk',
+  'https://ucarecdn.com/e8504025-c583-4bf4-a26e-13e182a5a08c/ucretsizsohbet.apk',
+  'https://ucarecdn.com/ddaeddc7-e88b-425e-85cb-8a7665ad3a42/ucretsizsohbet.apk',
+  'https://ucarecdn.com/f3394539-cac5-4baf-9eed-7dda9b5ffc62/ucretsizsohbet.apk',
+  'https://ucarecdn.com/7d5bbce6-5a5d-428e-8def-0d2f21c3f5e3/ucretsizsohbet.apk',
+  'https://ucarecdn.com/5309c367-debd-4b67-8634-5529d73db5d9/ucretsizsohbet.apk',
+  'https://ucarecdn.com/3aa881af-725a-4e83-8dc6-0487d9bd1d58/ucretsizsohbet.apk',
+  'https://ucarecdn.com/253758c7-e53b-48a3-b89b-90326a848bbb/ucretsizsohbet.apk',
+  'https://ucarecdn.com/97f1e463-d409-4f33-89ea-7057cb22e14d/ucretsizsohbet.apk',
+  'https://ucarecdn.com/42cb6b30-28a8-4ad3-a691-980d7da0bb66/ucretsizsohbet.apk',
+  'https://ucarecdn.com/191b79bd-4509-4d93-8311-f815a4ea7d54/ucretsizsohbet.apk',
+  'https://ucarecdn.com/52f56b2f-076f-4370-8f8d-0c526dbb2569/ucretsizsohbet.apk',
+  'https://ucarecdn.com/e23a83c6-1a0c-4cc6-9e34-1a70b4c0889e/ucretsizsohbet.apk',
+  'https://ucarecdn.com/56cd3e02-9294-4dd2-8e91-e4f77d0de9a4/ucretsizsohbet.apk',
+  'https://ucarecdn.com/3b8df0bd-8414-4623-97d2-755816cd9fb7/ucretsizsohbet.apk',
+  'https://ucarecdn.com/e8916233-fb1f-40ef-8dcf-e3ba4cce4838/ucretsizsohbet.apk',
+  'https://ucarecdn.com/4446fc50-dd71-44cd-937b-09b965d44452/ucretsizsohbet.apk',
+  'https://ucarecdn.com/55ce32f7-47cc-43f4-b7c6-668312696b2d/ucretsizsohbet.apk',
+  'https://ucarecdn.com/c963554b-ad64-4332-bb97-573f743e5780/ucretsizsohbet.apk',
+  'https://ucarecdn.com/d8c2cb48-44c7-4dd5-85da-2a81663a7e7c/ucretsizsohbet.apk',
+  'https://ucarecdn.com/97f1e463-d409-4f33-89ea-7057cb22e14d/ucretsizsohbet.apk',
+  'https://ucarecdn.com/253758c7-e53b-48a3-b89b-90326a848bbb/ucretsizsohbet.apk',
+  'https://ucarecdn.com/5309c367-debd-4b67-8634-5529d73db5d9/ucretsizsohbet.apk',
+
 ];
 
-// 144 dakika (8640 saniye) sürede 1 link geçiş yapacak şekilde index hesapla
 function getCurrentLinkIndex() {
   const now = new Date();
-
-  // Türkiye saati veya local saat gece yarısı (local 00:00)
-  const startedAt = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).getTime();
-
-  const currentTime = Date.now();
-
-  if (currentTime < startedAt) return 0;
-
-  const diffMinutes = (currentTime - startedAt) / (1000 * 60);
-  const index = Math.floor(diffMinutes / 144) % apkLinks.length;
-  return index;
+  return now.getHours() % apkLinks.length;
 }
-
-
 
 function getCurrentLink() {
   return apkLinks[getCurrentLinkIndex()];
