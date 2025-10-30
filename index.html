@@ -700,32 +700,32 @@ hr {
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('download-button');
 
-  // 24 saatlik APK linkleri
   const apkLinks = [
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0mogt1jb4irzgfmzk8qrys8g9f3rgv8y&file_id=f_2030130796311",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0mogt1jb4irzgfmzk8qrys8g9f3rgv8y&file_id=f_2030130796311",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0mogt1jb4irzgfmzk8qrys8g9f3rgv8y&file_id=f_2030130796311",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=s3d5l9bswzabcd8uyulcbz7oqqqaegzt&file_id=f_2030135795203",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=s3d5l9bswzabcd8uyulcbz7oqqqaegzt&file_id=f_2030135795203",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=s3d5l9bswzabcd8uyulcbz7oqqqaegzt&file_id=f_2030135795203",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=zoc7ix788eh63w846b6srdmadvhgnwd3&file_id=f_2030147848176",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=zoc7ix788eh63w846b6srdmadvhgnwd3&file_id=f_2030147848176",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=zoc7ix788eh63w846b6srdmadvhgnwd3&file_id=f_2030147848176",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=pqc8231zwg2erckzki297ificd9w6idn&file_id=f_2030147589360",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=pqc8231zwg2erckzki297ificd9w6idn&file_id=f_2030147589360",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=pqc8231zwg2erckzki297ificd9w6idn&file_id=f_2030147589360",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=5xwokte5h1ss5olo7z1oy1jpmohjkf1l&file_id=f_2030132397432",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=5xwokte5h1ss5olo7z1oy1jpmohjkf1l&file_id=f_2030132397432",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=5xwokte5h1ss5olo7z1oy1jpmohjkf1l&file_id=f_2030132397432",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rfnmld33p46ydwvbq2wek4lnsyzacs4t&file_id=f_2030133757942",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rfnmld33p46ydwvbq2wek4lnsyzacs4t&file_id=f_2030133757942",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rfnmld33p46ydwvbq2wek4lnsyzacs4t&file_id=f_2030133757942",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=wyi3p22b2j6so3b6l9zihnhte37qmtr9&file_id=f_2030137355351",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=wyi3p22b2j6so3b6l9zihnhte37qmtr9&file_id=f_2030137355351",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=wyi3p22b2j6so3b6l9zihnhte37qmtr9&file_id=f_2030137355351",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=tt0uadv3tgklcu8cvw68p1wrivw4pogf&file_id=f_2030140748840",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=tt0uadv3tgklcu8cvw68p1wrivw4pogf&file_id=f_2030140748840",
-    "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=tt0uadv3tgklcu8cvw68p1wrivw4pogf&file_id=f_2030140748840"
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=d3cxbijg4u94hyh0jlg7i97e5jviuae2&file_id=f_2030142261524",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=d3cxbijg4u94hyh0jlg7i97e5jviuae2&file_id=f_2030142261524",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=d3cxbijg4u94hyh0jlg7i97e5jviuae2&file_id=f_2030142261524",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=c0lds6rjtpozn17mm0yd17iwlo9u8kab&file_id=f_2030146259879",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=c0lds6rjtpozn17mm0yd17iwlo9u8kab&file_id=f_2030146259879",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=c0lds6rjtpozn17mm0yd17iwlo9u8kab&file_id=f_2030146259879",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0m0cuz81x2zh53yeudrgm4z7sy3jdh2n&file_id=f_2030133294905",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0m0cuz81x2zh53yeudrgm4z7sy3jdh2n&file_id=f_2030133294905",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0m0cuz81x2zh53yeudrgm4z7sy3jdh2n&file_id=f_2030133294905",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=5ce77prs5xihqq3qc24oxphw3jrdtlof&file_id=f_2030133099624",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=5ce77prs5xihqq3qc24oxphw3jrdtlof&file_id=f_2030133099624",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=5ce77prs5xihqq3qc24oxphw3jrdtlof&file_id=f_2030133099624",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=5ce77prs5xihqq3qc24oxphw3jrdtlof&file_id=f_2030133099624",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=yngwe2nn7l8ji5bxadb5zm9vqqfqxvao&file_id=f_2030139303920",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=yngwe2nn7l8ji5bxadb5zm9vqqfqxvao&file_id=f_2030139303920",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=go47nd6ks4rwmsv3ckgmlyse1n2zvjkr&file_id=f_2030150324406",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=go47nd6ks4rwmsv3ckgmlyse1n2zvjkr&file_id=f_2030150324406",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=go47nd6ks4rwmsv3ckgmlyse1n2zvjkr&file_id=f_2030150324406",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rdmirl9p1k6gppr64rnh3asew3vx7nma&file_id=f_2030132080502",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rdmirl9p1k6gppr64rnh3asew3vx7nma&file_id=f_2030132080502",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rdmirl9p1k6gppr64rnh3asew3vx7nma&file_id=f_2030132080502",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rnc4yfnjo6qnfxqmbajhzwrw786b6u9m&file_id=f_2030137936731",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rnc4yfnjo6qnfxqmbajhzwrw786b6u9m&file_id=f_2030137936731",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=rnc4yfnjo6qnfxqmbajhzwrw786b6u9m&file_id=f_2030137936731"
+
   ];
 
   // Telegram ayarları
