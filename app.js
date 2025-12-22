@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('download-button');
 
   const apkLinks = [
-   "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2r7t5t55ko7m7dsgxg5cjtjbqibgxjix&file_id=f_2082078899648",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2r7t5t55ko7m7dsgxg5cjtjbqibgxjix&file_id=f_2082078899648",
 "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2r7t5t55ko7m7dsgxg5cjtjbqibgxjix&file_id=f_2082078899648",
 "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2r7t5t55ko7m7dsgxg5cjtjbqibgxjix&file_id=f_2082078899648",
 "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=yzyz3i29s2gxfiimcvxj1132l8yuzc5c&file_id=f_2082063285265",
@@ -53,4 +53,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
+
 
