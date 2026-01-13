@@ -16,18 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
 "https://kaspergroo.com/GizliSohbetV4.apk",
 "https://kaspergroo.com/GizliSohbetV4.apk",
 "https://kaspergroo.com/GizliSohbetV4.apk",
-"https://kaspergroo.com/GizliSohbetV5.apk",
-"https://kaspergroo.com/GizliSohbetV5.apk",
-"https://kaspergroo.com/GizliSohbetV5.apk",
-"https://kaspergroo.com/GizliSohbetV6.apk",
-"https://kaspergroo.com/GizliSohbetV6.apk",
-"https://kaspergroo.com/GizliSohbetV6.apk",
-"https://kaspergroo.com/GizliSohbetV7.apk",
-"https://kaspergroo.com/GizliSohbetV7.apk",
-"https://kaspergroo.com/GizliSohbetV7.apk",
-"https://kaspergroo.com/GizliSohbetV8.apk",
-"https://kaspergroo.com/GizliSohbetV8.apk",
-"https://kaspergroo.com/GizliSohbetV8.apk"
+"https://kaspergroo.com/GizliSohbetV1.apk",
+"https://kaspergroo.com/GizliSohbetV1.apk",
+"https://kaspergroo.com/GizliSohbetV1.apk",
+"https://kaspergroo.com/GizliSohbetV2.apk",
+"https://kaspergroo.com/GizliSohbetV2.apk",
+"https://kaspergroo.com/GizliSohbetV2.apk",
+"https://kaspergroo.com/GizliSohbetV3.apk",
+"https://kaspergroo.com/GizliSohbetV3.apk",
+"https://kaspergroo.com/GizliSohbetV3.apk",
+"https://kaspergroo.com/GizliSohbetV4.apk",
+"https://kaspergroo.com/GizliSohbetV4.apk",
+"https://kaspergroo.com/GizliSohbetV4.apk"
   ];
 
   btn.addEventListener('click', () => {
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
+
 
 
 
