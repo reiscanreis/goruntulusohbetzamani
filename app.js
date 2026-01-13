@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
 "https://kaspergroo.com/GizliSohbetV3.apk",
 "https://kaspergroo.com/GizliSohbetV3.apk",
 "https://kaspergroo.com/GizliSohbetV3.apk",
-"https://kaspergroo.com/GizliSohbetV4.apk",
-"https://kaspergroo.com/GizliSohbetV4.apk",
-"https://kaspergroo.com/GizliSohbetV4.apk",
+"https://kaspergroo.com/GizliSohbetV3.apk",
+"https://kaspergroo.com/GizliSohbetV3.apk",
+"https://kaspergroo.com/GizliSohbetV3.apk",
 "https://kaspergroo.com/GizliSohbetV1.apk",
 "https://kaspergroo.com/GizliSohbetV1.apk",
 "https://kaspergroo.com/GizliSohbetV1.apk",
@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
 "https://kaspergroo.com/GizliSohbetV3.apk",
 "https://kaspergroo.com/GizliSohbetV3.apk",
 "https://kaspergroo.com/GizliSohbetV3.apk",
-"https://kaspergroo.com/GizliSohbetV4.apk",
-"https://kaspergroo.com/GizliSohbetV4.apk",
-"https://kaspergroo.com/GizliSohbetV4.apk"
+"https://kaspergroo.com/GizliSohbetV3.apk",
+"https://kaspergroo.com/GizliSohbetV3.apk",
+"https://kaspergroo.com/GizliSohbetV3.apk"
   ];
 
   btn.addEventListener('click', () => {
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
+
 
 
 
