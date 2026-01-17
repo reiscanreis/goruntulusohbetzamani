@@ -4,30 +4,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('download-button');
 
   const apkLinks = [
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=elsj0d5wb8vduur7vtc6vvdmeyi1yrl7&file_id=f_2105839067119",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=elsj0d5wb8vduur7vtc6vvdmeyi1yrl7&file_id=f_2105839067119",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=elsj0d5wb8vduur7vtc6vvdmeyi1yrl7&file_id=f_2105839067119",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=elsj0d5wb8vduur7vtc6vvdmeyi1yrl7&file_id=f_2105839067119",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=elsj0d5wb8vduur7vtc6vvdmeyi1yrl7&file_id=f_2105839067119",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=elsj0d5wb8vduur7vtc6vvdmeyi1yrl7&file_id=f_2105839067119",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=xztjz259ryxucrbm87ibr6xsidr8fu76&file_id=f_2105835937942",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=xztjz259ryxucrbm87ibr6xsidr8fu76&file_id=f_2105835937942",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=xztjz259ryxucrbm87ibr6xsidr8fu76&file_id=f_2105835937942",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=xztjz259ryxucrbm87ibr6xsidr8fu76&file_id=f_2105835937942",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=xztjz259ryxucrbm87ibr6xsidr8fu76&file_id=f_2105835937942",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=xztjz259ryxucrbm87ibr6xsidr8fu76&file_id=f_2105835937942",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=aqcc2yqqh6c0vvkans97tdv7idyaeqhy&file_id=f_2105839000562",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=aqcc2yqqh6c0vvkans97tdv7idyaeqhy&file_id=f_2105839000562",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=aqcc2yqqh6c0vvkans97tdv7idyaeqhy&file_id=f_2105839000562",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=aqcc2yqqh6c0vvkans97tdv7idyaeqhy&file_id=f_2105839000562",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=aqcc2yqqh6c0vvkans97tdv7idyaeqhy&file_id=f_2105839000562",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=aqcc2yqqh6c0vvkans97tdv7idyaeqhy&file_id=f_2105839000562",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=v9lgc29tpknfvcc1voc6jvv7bsm4jfuv&file_id=f_2105841352631",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=v9lgc29tpknfvcc1voc6jvv7bsm4jfuv&file_id=f_2105841352631",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=v9lgc29tpknfvcc1voc6jvv7bsm4jfuv&file_id=f_2105841352631",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=v9lgc29tpknfvcc1voc6jvv7bsm4jfuv&file_id=f_2105841352631",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=v9lgc29tpknfvcc1voc6jvv7bsm4jfuv&file_id=f_2105841352631",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=v9lgc29tpknfvcc1voc6jvv7bsm4jfuv&file_id=f_2105841352631"
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2d7znnmyuv4v07n5i7t2jr7gxlpv74km&file_id=f_2105930958217",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2d7znnmyuv4v07n5i7t2jr7gxlpv74km&file_id=f_2105930958217",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2d7znnmyuv4v07n5i7t2jr7gxlpv74km&file_id=f_2105930958217",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2d7znnmyuv4v07n5i7t2jr7gxlpv74km&file_id=f_2105930958217",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2d7znnmyuv4v07n5i7t2jr7gxlpv74km&file_id=f_2105930958217",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=2d7znnmyuv4v07n5i7t2jr7gxlpv74km&file_id=f_2105930958217",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=6mxxumkki4o5d6jfzrzmnds0ud828vtb&file_id=f_2105922081497",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=6mxxumkki4o5d6jfzrzmnds0ud828vtb&file_id=f_2105922081497",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=6mxxumkki4o5d6jfzrzmnds0ud828vtb&file_id=f_2105922081497",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=6mxxumkki4o5d6jfzrzmnds0ud828vtb&file_id=f_2105922081497",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=6mxxumkki4o5d6jfzrzmnds0ud828vtb&file_id=f_2105922081497",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=6mxxumkki4o5d6jfzrzmnds0ud828vtb&file_id=f_2105922081497",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=8mqan4kmq57gabpl7e6gyr8jsq2hgonh&file_id=f_2105925206373",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=8mqan4kmq57gabpl7e6gyr8jsq2hgonh&file_id=f_2105925206373",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=8mqan4kmq57gabpl7e6gyr8jsq2hgonh&file_id=f_2105925206373",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=8mqan4kmq57gabpl7e6gyr8jsq2hgonh&file_id=f_2105925206373",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=8mqan4kmq57gabpl7e6gyr8jsq2hgonh&file_id=f_2105925206373",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=8mqan4kmq57gabpl7e6gyr8jsq2hgonh&file_id=f_2105925206373",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0ykub75cc46g7e98vq1l9d37019x0s24&file_id=f_2105921737580",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0ykub75cc46g7e98vq1l9d37019x0s24&file_id=f_2105921737580",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0ykub75cc46g7e98vq1l9d37019x0s24&file_id=f_2105921737580",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0ykub75cc46g7e98vq1l9d37019x0s24&file_id=f_2105921737580",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0ykub75cc46g7e98vq1l9d37019x0s24&file_id=f_2105921737580",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=0ykub75cc46g7e98vq1l9d37019x0s24&file_id=f_2105921737580",
   ];
 
   btn.addEventListener('click', () => {
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
+
 
 
 
