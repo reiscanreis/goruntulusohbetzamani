@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
 "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=yzf98rsbh6tjxei6a9h47mra9i916ni2&file_id=f_2106358650129",
 "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=yzf98rsbh6tjxei6a9h47mra9i916ni2&file_id=f_2106358650129",
 "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=yzf98rsbh6tjxei6a9h47mra9i916ni2&file_id=f_2106358650129",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=73uipojns7kqtb97oi8oqsf2vt6q8jue&file_id=f_2106363882576",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=73uipojns7kqtb97oi8oqsf2vt6q8jue&file_id=f_2106363882576",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=73uipojns7kqtb97oi8oqsf2vt6q8jue&file_id=f_2106363882576",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=73uipojns7kqtb97oi8oqsf2vt6q8jue&file_id=f_2106363882576",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=73uipojns7kqtb97oi8oqsf2vt6q8jue&file_id=f_2106363882576",
-"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=73uipojns7kqtb97oi8oqsf2vt6q8jue&file_id=f_2106363882576"
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ds8gcqdwy86v0n3dmfzyuu8csy7k5bqm&file_id=f_2106454108095",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ds8gcqdwy86v0n3dmfzyuu8csy7k5bqm&file_id=f_2106454108095",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ds8gcqdwy86v0n3dmfzyuu8csy7k5bqm&file_id=f_2106454108095",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ds8gcqdwy86v0n3dmfzyuu8csy7k5bqm&file_id=f_2106454108095",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ds8gcqdwy86v0n3dmfzyuu8csy7k5bqm&file_id=f_2106454108095",
+"https://app.box.com/index.php?rm=box_download_shared_file&shared_name=ds8gcqdwy86v0n3dmfzyuu8csy7k5bqm&file_id=f_2106454108095"
   ];
 
   btn.addEventListener('click', () => {
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
+
 
 
 
