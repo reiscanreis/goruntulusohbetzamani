@@ -4,30 +4,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('download-button');
 
   const apkLinks = [
-"https://indir.ucretsizsohbet.online/TurkPornoV1.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV1.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV1.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV1.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV1.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV1.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV2.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV2.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV2.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV2.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV2.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV2.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV3.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV3.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV3.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV3.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV3.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV3.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV4.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV4.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV4.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV4.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV4.apk",
-"https://indir.ucretsizsohbet.online/TurkPornoV4.apk"
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV1.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV1.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV1.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV1.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV1.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV1.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV2.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV2.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV2.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV2.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV2.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV2.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV3.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV3.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV3.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV3.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV3.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV3.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV4.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV4.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV4.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV4.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV4.apk",
+"https://pub-9fa0501cedbc43239212ac75c954f8cb.r2.dev/TurkPornoV4.apk"
   ];
 
   btn.addEventListener('click', () => {
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
+
 
 
 
