@@ -5,29 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const apkLinks = [
 "https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV1.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV1.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV1.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV1.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV1.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV1.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV2.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV2.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV2.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV2.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV2.apk",
 "https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV2.apk",
 "https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV3.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV3.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV3.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV4.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV4.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV4.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV5.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV5.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV5.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV6.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV6.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV6.apk"
+"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV4.apk"
   ];
 
   btn.addEventListener('click', () => {
@@ -51,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
+
 
 
 
